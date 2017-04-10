@@ -8,8 +8,8 @@ echo "Server Start Ups"
 cd /home/vagrant/node-cqm-engine
 npm install
 
-curl -u [UMLS USERNAME]:[UMLS PASSWORD] https://cypressdemo.healthit.gov/measure_bundles/bundle-2015.zip > bundle2015.zip
-nodejs load_bundle.js -b bundle2015.zip
+curl https://s3.amazonaws.com/algorex-working-data/bundle.zip > bundle.zip
+nodejs load_bundle.js -b bundle.zip
 
 #USE FOREVER TO START CQM QUEUES AND CALCULATION JOBS
 sudo npm install forever -g
