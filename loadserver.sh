@@ -8,7 +8,9 @@ echo "Server Start Ups"
 cd /home/vagrant/node-cqm-engine
 npm install
 
-curl https://s3.amazonaws.com/algorex-working-data/bundle.zip > bundle.zip
+
+## REPLACE WITH CORRECT USER AND PASSWORD 
+curl -u hsimpson:DUFFmoesbar! https://cypress.healthit.gov/measure_bundles/ > bundle.zip
 nodejs load_bundle.js -b bundle.zip
 
 #USE FOREVER TO START CQM QUEUES AND CALCULATION JOBS
