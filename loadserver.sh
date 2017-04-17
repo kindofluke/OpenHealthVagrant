@@ -10,7 +10,7 @@ npm install
 
 
 ## REPLACE WITH CORRECT USER AND PASSWORD 
-curl -u hsimpson:DUFFmoesbar! https://cypress.healthit.gov/measure_bundles/ > bundle.zip
+curl -u hsimpson:DUFFmoesbar! https://cypress.healthit.gov/measure_bundles/modified-ecqm-bundle.zip > bundle.zip
 nodejs load_bundle.js -b bundle.zip
 
 #USE FOREVER TO START CQM QUEUES AND CALCULATION JOBS
